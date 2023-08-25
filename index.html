@@ -14,7 +14,7 @@
         crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <script defer src="js/script.js"></script>
     <title>Beady Agency</title>
 </head>
 
@@ -72,15 +72,15 @@
             </div>
         </nav>
 
-        <article class="hero-container flex collumn">
+        <article class="hero-container flex collumn fade-in">
             <img src="img/hero/elipse-1.svg" class="elipse-bg-1 absolute" aria-hidden="true">
             <img src="img/hero/elipse-2.svg" class="elipse-bg-2 absolute" aria-hidden="true">
 
             <div class="titulo">
-                <h1><span>CREATIVE</span> DIGITAL <br> SOLUTIONS\</h1>
+                <h1><span class="gradient-fade">CREATIVE</span> DIGITAL <br> SOLUTIONS\</h1>
             </div>
             <div class="titulo">
-                <h1>FOR YOUR MVP’S <br> <span>PRODUCTS</span>.</h1>
+                <h1>FOR YOUR MVP’S <br> <span class="gradient-fade">PRODUCTS</span>.</h1>
                 <div class="slogan">
                     <p>Win your pitch, build effective products</p>
                 </div>
@@ -95,10 +95,10 @@
     </section>
 
     <main>
-        <section id="about">
+        <section id="about" class="reveal">
+            <h2 class="h2 gradient-fade">About <span>us</span></h2>
             <article class="about-container flex">
-                <div class="content">
-                    <h2 class="h2">About <span>us</span></h2>
+                <div class="about-txt flex collumn">
                     <p>
                         BEADY AGENCY, A CREATIVE DIGITAL AGENCY FOR MVP’S DIGITAL PRODUCTS. WE ARE SERVING DIGITAL
                         STARTUPS CLIENTS WORLDWIDE.
@@ -110,38 +110,43 @@
                     </p>
                 </div>
 
-                <img src="img/about/bg-about-colorido.png" class="bg-about-colorido" loading="lazy"
-                    alt="formas coloridas">
+                <div class="about-img flex collumn">
+                    <!-- colorida -->
+                    <img src="" class="bg-about-colorido" loading="lazy"
+                        alt="formas coloridas">
+
+                    <!-- engrenagens -->
+                    <img src="img/about/bg-about-cinza.png" class="bg-about-cinza" loading="lazy"
+                        alt="Engrenagens cinzas">
+
+                    <!-- moldura -->
+                    <img src="img/about/bg-about-moldura.png" class="bg-about-moldura absolute" aria-hidden="true">
+                </div>
             </article>
 
-            <!-- engrenagens -->
-            <img src="img/about/bg-about-cinza.png" class="bg-about-cinza flex" loading="lazy" alt="Engrenagens cinzas">
-
-            <!-- moldura -->
-            <img src="img/about/bg-about-moldura.png" class="bg-about-moldura absolute" aria-hidden="true">
 
             <!-- bg quadriculado -->
             <img src="img/about/bg-about-square.svg" class="bg-about-square absolute" aria-hidden="true">
         </section>
 
-        <section id="clients">
-            <h2 class="h2">Our Clients</h2>
+        <section id="clients" class="reveal">
+            <h2 class="h2 gradient-fade">Our Clients</h2>
 
             <div class="clients-img-container flex">
-                <img src="img/clients/ainol-logo.svg" alt="Ainol Logo">
-                <img src="img/clients/metal3-icon-black logo.svg" alt="Metal Logo">
-                <img src="img/clients/boom-technology-logo.svg" alt="Boom Technology Logo">
-                <img src="img/clients/grupo-logo.svg" alt="Grupo Logo">
-                <img src="img/clients/haute-logo.svg" alt="Haute Logo">
-                <img src="img/clients/africa-fintech-foundry-logo.svg" alt="Africa Fintech Foundry Logo">
-                <img src="img/clients/airtex-logo.svg" alt="Airtex Logo">
+                <img src="img/clients/ainol-logo.svg" alt="Ainol Logo" class="client">
+                <img src="img/clients/metal3-icon-black logo.svg" alt="Metal Logo" class="client">
+                <img src="img/clients/boom-technology-logo.svg" alt="Boom Technology Logo" class="client">
+                <img src="img/clients/grupo-logo.svg" alt="Grupo Logo" class="client">
+                <img src="img/clients/haute-logo.svg" alt="Haute Logo" class="client">
+                <img src="img/clients/africa-fintech-foundry-logo.svg" alt="Africa Fintech Foundry Logo" class="client">
+                <img src="img/clients/airtex-logo.svg" alt="Airtex Logo" class="client">
             </div>
         </section>
 
         <section id="projects">
-            <h2 class="h2">Our Projects</h2>
+            <h2 class="h2 gradient-fade reveal">Our Projects</h2>
 
-            <article class="projects-container flex">
+            <article class="projects-container flex reveal">
                 <article class="project-field grid">
                     Web Design
                 </article>
@@ -159,7 +164,7 @@
                 </article>
             </article>
 
-            <article class="completed-projects-container flex">
+            <article class="completed-projects-container flex reveal">
                 <article class="completed-project-item">
                     <span>156</span>
                     <p>Completed Projetcs</p>
@@ -170,49 +175,52 @@
                 </article>
             </article>
 
-            <!-- <article class="slider-container">
-                <div class="slides-3 swiper" data-aos="fade-up">
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide event-item d-flex flex-column justify-content-end"
-                            style="background-image: url(img/projects/events-1.jpg)">
-                            <h3>Custom Parties</h3>
-                            <div class="price align-self-start">$99</div>
-                        </div>
-
-                        <div class="swiper-slide event-item d-flex flex-column justify-content-end"
-                            style="background-image: url(img/projects/events-2.jpg)">
-                            <h3>Private Parties</h3>
-                            <div class="price align-self-start">$289</div>
-                            
-                        </div>
-
-                        <div class="swiper-slide event-item d-flex flex-column justify-content-end"
-                            style="background-image: url(img/projects/events-3.jpg)">
-                            <h3>Birthday Parties</h3>
-                            <div class="price align-self-start">$499</div>
-                            
-                        </div>
-
+            <article class="slider-container flex reveal">
+                <article class="slider-item flex">
+                    <div class="slider-info flex">
+                        <button class="button secondary-btn">Trading Digital App</button>
+                        <h6>SaaS - 2022</h6>
                     </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </article> -->
+                </article>
+                <article class="slider-item flex">
+                    <div class="slider-info flex">
+                        <button class="button secondary-btn">Affiliate App</button>
+                        <h6>SaaS - 2022</h6>
+                    </div>
+                </article>
+                <article class="slider-item flex">
+                    <div class="slider-info flex">
+                        <button class="button secondary-btn">News Dashboard</button>
+                        <h6>SaaS - 2022</h6>
+                    </div>
+                </article>
+            </article>
+
+            <section class="arrow-btn-container flex">
+                <button class="button arrow-btn">
+                    <img src="img/arrow-left.svg" aria-hidden="true">
+                </button>
+                <button class="button arrow-btn">
+                    <img src="img/arrow-right.svg" aria-hidden="true">
+                </button>
+            </section>
         </section>
 
         <section id="testimonials">
-            <h2 class="h2">Testimonials</h2>
+            <h2 class="h2 reveal gradient-fade">Testimonials</h2>
 
-            <section class="cards-container grid">
+            <section class="cards-container grid reveal">
                 <article class="testimonial-card">
                     <p class="quote">
-                        "The team were very cooperative and quick. They worked well with our the tight schedule and were always on top"
+                        "The team were very cooperative and quick. They worked well with our the tight schedule and were
+                        always on top"
                     </p>
                     <p class="name">Tony - CEO at Company 1</p>
                 </article>
                 <article class="testimonial-card">
                     <p class="quote">
-                        "They provided their creative creative and ideas yet still gicing the best solution to our company's goals."
+                        "They provided their creative creative and ideas yet still gicing the best solution to our
+                        company's goals."
                     </p>
                     <p class="name">Douglas - CEO at Company 2</p>
                 </article>
@@ -224,7 +232,8 @@
                 </article>
                 <article class="testimonial-card">
                     <p class="quote">
-                        "The team were very cooperative and quick. They worked well with our the tight schedule and were always on top"
+                        "The team were very cooperative and quick. They worked well with our the tight schedule and were
+                        always on top"
                     </p>
                     <p class="name">Tony - CEO at Company 1</p>
                 </article>
@@ -240,9 +249,10 @@
             </section>
         </section>
 
-        <section id="call-to-action">
+        <section id="call-to-action" class="reveal">
             <h4>
-                We build products effectively and with powerful aesthetics looks in very flexible cost. We combined our craft skills and user experience to create a great useful product yet delightful.
+                We build products effectively and with powerful aesthetics looks in very flexible cost. We combined our
+                craft skills and user experience to create a great useful product yet delightful.
             </h4>
             <button class="button primary-btn">
                 <div class="icon-container">
@@ -254,26 +264,27 @@
     </main>
 
     <footer class="flex">
-            <article class="email">
-                <h5>We would love to hear from you.</h5>
-                <p>
-                    You can drop us a line via email 
-                    <br> 
-                    <a href="#">hello@beady.agency</a>
-                </p>
-            </article>
-            <article class="address">
-                <h6>Our Address</h6>
-                <p>
-                    Brighton Legacy Tower, <br>
-                    00-750 Warsaw, Poland
-                </p>
-                <p>
-                    VAT: 472293849093 <br>
-                    Beady Agency Sp. z o. o. <br>
-                    Registred in Warsaw, Poland
-                </p>
-            </article>
+        <article class="email">
+            <h5>We would love to hear from you.</h5>
+            <p>
+                You can drop us a line via email
+                <br>
+                <a href="#">hello@beady.agency</a>
+            </p>
+        </article>
+        <article class="address">
+            <h6>Our Address</h6>
+            <p>
+                Brighton Legacy Tower, <br>
+                00-750 Warsaw, Poland
+            </p>
+            <p>
+                VAT: 472293849093 <br>
+                Beady Agency Sp. z o. o. <br>
+                Registred in Warsaw, Poland
+            </p>
+        </article>
+        <article class="wrapper flex">
             <article class="navigation">
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -293,16 +304,63 @@
                     <li><a href="#">Twitter</a></li>
                 </ul>
             </article>
-            <article class="newsletter">
-                <h5>Join the newsletter!</h5>
-                <button class="button arrow-btn">
-                    <div class="flex icon-container">
-                        <p>your e-mail address</p>
-                        <img src="arrow-right.svg" aria-hidden="true">
-                    </div>
-                </button>
-            </article>
+        </article>
+        <article class="newsletter">
+            <h5>Join the newsletter!</h5>
+            <button type="button" class="button arrow-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="flex icon-container">
+                    <p>your e-mail address</p>
+                    <img src="img/arrow-right.svg" aria-hidden="true">
+                </div>
+            </button>
+        </article>
     </footer>
+
+    <!-- modal newsletter -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-theme="dark">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">Join the Newsletter!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form class="needs-validation" novalidate>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingName" placeholder="Your name" required>
+                            <label for="floatingName" >Your Name</label>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                            <div class="invalid-feedback">
+                                Value cannot be empty!
+                            </div>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                            <label for="floatingInput">Email address</label>
+                            <div class="valid-feedback">
+                                Nice!
+                            </div>
+                            <div class="invalid-feedback">
+                                Please enter a valid email.
+                            </div>
+                        </div>
+
+                        <button type="submit" class="button primary-btn">Finish</button>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="button secondary-btn" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </body>
