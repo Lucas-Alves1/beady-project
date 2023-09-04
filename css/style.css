@@ -96,7 +96,7 @@ body {
 
 .brand-container > h5:last-child {
     font-family: inherit;
-    font-size: 12px;
+    font-size: .75rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -191,7 +191,7 @@ body {
         linear-gradient(to right, var(--blue-primary) 45%, var(--light-green) 55%);
 }
 
-.titulo:hover .gradient-fade {
+.titulo > h1:hover .gradient-fade {
     background-position: 0% 50%; 
 }
 
@@ -489,8 +489,10 @@ main {
     padding-inline: 4rem;
 
     background: 
-        url(../img/testimonials/bg-testimonials.jpg), lightgray 50% / cover no-repeat;
+        url(../img/testimonials/bg-testimonials.jpg);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #testimonials > h2 {
@@ -499,7 +501,7 @@ main {
 
 .cards-container {
     grid-template-columns: repeat(4, 1fr);
-    margin-block-end: 3rem;
+    margin-block-end: 2.75rem;
 }
 
 .testimonial-card {
@@ -510,11 +512,19 @@ main {
     align-items: flex-start;
     gap: 2rem;
     color: var(--gray-6);
+    min-width: min(100%, 300px);
 
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(20px);
     border: 1px solid var(--gray-square);
     border-radius: 20px;
+
+    transition: all .3s ease-in-out;
+}
+
+.testimonial-card:hover {
+    backdrop-filter: blur(50px);
+    transform: translateY(-1.25rem);
 }
 
 .quote, .name {
@@ -540,8 +550,7 @@ main {
 /* call to action section */
 
 #call-to-action {
-    padding-inline: 4rem;
-    padding-block-end: 4rem;
+    padding: 4rem 0 0;
     text-align: center;
 }
 
@@ -553,7 +562,7 @@ main {
     line-height: 55px;
     letter-spacing: -0.32px;
 
-    margin-block: 2.5rem;
+    margin-block-end: 2.5rem;
     margin-inline: auto;
     max-width: min(100%, 600px);
 }
@@ -764,7 +773,7 @@ footer {
 
 .arrow-btn {
     border: 1px solid var(--white);
-    padding: .5rem 2rem;
+    padding: .75rem 2rem;
 
     color: var(--white);
     background-color: transparent;
@@ -778,7 +787,7 @@ footer {
 }
 
 .arrow-btn > img {
-    max-width: 2rem;
+    max-width: 4rem;
 }
 
 
@@ -1110,4 +1119,193 @@ footer {
         margin-block-end: 2rem;
         line-height: normal;
     }
+}
+
+@media only screen and (width > 87.5rem) { /* 1400px */
+    /* geral */
+    h1 {
+        font-size: 6rem !important;
+        line-height: 100px;
+    }
+
+    h2 {
+        font-size: 4rem !important;
+    }
+
+    #hero,
+    #about,
+    #clients,
+    #call-to-action {
+        padding-inline: 18.563rem !important;
+    }
+
+    #testimonials {
+        padding-inline: 11.25rem !important;
+    }
+
+    /* hero section */
+    #hero {
+        min-height: min(100vh, 960px);
+    }
+
+    .hero-container {
+        margin-block-start: 6.125rem;
+        width: 100%
+    }
+
+    .titulo + .titulo {
+        margin-block-start: 1.5rem;
+    }
+
+    .slogan {
+        margin-block-end: 6rem;
+    }
+    
+    .slogan > p {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .titulo > .primary-btn {
+        margin-bottom: 9.25rem;
+    }
+
+    /* about us section */
+    #about {
+        padding-block-start: 8.563rem;
+        margin-inline: auto;
+    }
+
+    .about-container {
+        max-width: min(100%, 1350px);
+        margin-inline: auto;
+    }
+    
+    .bg-about-colorido {
+        translate: 0 -35%;
+        min-width: min(100%, 44.313rem);
+    }
+    
+    
+    .bg-about-cinza {
+        translate: -15rem -15rem;
+        min-width: min(50%, 30.375rem) !important;
+    }
+    
+    .bg-about-moldura {
+        translate: -12.5rem -12rem;
+        min-width: min(50%, 30.375rem) !important;
+        bottom: 90px;    
+    }
+
+    .bg-about-square {
+        top: 4rem;
+        left: 0;
+    }
+
+    /* clients section */
+    #clients {
+        margin-block-start: 2rem;
+    }
+
+    /* projects section */
+    #projects .arrow-btn-container {
+        margin-block-start: 4.063rem;
+    }
+
+    .project-field {
+        font-size: 2rem;
+    }
+
+    .completed-projects-container {
+        max-width: 40%;
+        gap: 9.125rem !important;
+    }
+
+    .completed-project-item {
+        min-width: min(285px, 100%);
+    }
+
+    .completed-project-item > span {
+        font-size: 6rem;
+    }
+
+    .slider-info > h6 {
+        font-size: 1.25rem;
+    }
+
+    .completed-project-item > p {
+        font-size: 2rem;
+    }
+
+    /* testimonials section */
+    #testimonials > .arrow-btn-container {
+        margin-block-end: 6.5rem;
+    }
+
+    .testimonial-card {
+        padding: 2.625rem;
+    }
+
+    .quote {
+        font-size: 2rem;
+    }
+
+    .name {
+        font-size: 1rem;
+    }
+
+    /* call to action section */  
+    #call-to-action > h4 {
+        font-size: var(--h1);
+        margin-block-end: var(--h1);
+        line-height: 80px;
+        max-width: 85%;
+    }
+
+    #call-to-action .primary-btn {
+        margin-block-end: 5rem;
+    }
+
+    /* footer section */
+    footer {
+        padding: 5rem;
+    }
+
+    .newsletter > h5 {
+        margin-bottom: 23px;
+    }
+
+    .newsletter > .arrow-btn img {
+        max-width: 100%;
+    }
+
+    .newsletter > .arrow-btn p {
+        font-size: 1.25rem;
+        letter-spacing: 4.6px;
+    }
+
+    /* utility classes */
+    .h2 {
+        margin-block-end: 2rem;
+        line-height: normal;
+    }
+
+    .primary-btn {
+        font-size: 2rem !important;
+        letter-spacing: 7.36px !important;
+        padding: .5rem 2rem;
+        gap: 1.5rem;
+    }
+
+    .secondary-btn {
+        padding: .5rem 1.25rem;
+        font-size: 1.25rem !important;
+        letter-spacing: 4.6px;
+    }
+
+    .arrow-btn > img {
+        max-width: 100%;
+    }
+
 }
